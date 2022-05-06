@@ -1,0 +1,40 @@
+.sidepanel {
+  width: 340px;
+  position: fixed;
+  top: 226px;
+  left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  transform: rotate(90deg);
+  transform-origin: top left;
+ 
+}
+.sidepanel__link {
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
+  &:hover {
+      opacity: 0.7;
+  }
+  &_fcb {
+    background: url("@img/icons/social/facebook.svg");
+  }
+  &_inst {
+    background: url("@img/icons/social/instagram.svg");
+  }
+  &_git {
+    background: url("@img/icons/social/github.svg");
+  }
+}
+.sidepanel__divider {
+  width: 70px;
+  height: 2px;
+ background-color: #000;
+}
+.sidepanel__title {
+    transform: rotate(-180deg);
+}
+
+

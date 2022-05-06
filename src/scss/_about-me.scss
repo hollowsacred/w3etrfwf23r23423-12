@@ -1,0 +1,83 @@
+.about-me {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $secondaryColor;
+}
+
+.about-me__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.about-me__subtitle {
+  margin-bottom: 6px;
+}
+
+.about-me__title {
+  margin-bottom: 24px;
+}
+.about-me__descr {
+  margin-bottom: 40px;
+}
+.about-me__impacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+.about-me__impact {
+  max-width: 260px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.about-me__icon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-color: #ffa501;
+  border-radius: 100%;
+  margin-right: 24px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: url("@img/icons/about_me/web_development.svg") no-repeat;
+  }
+  &_web1 {
+    &::before {
+      top: 15px;
+      left: 15px;
+      background: url("@img/icons/about_me/web_development.svg") no-repeat;
+    }
+  }
+  &_web2 {
+    &::before {
+      top: 14px;
+      left: 18px;
+      background: url("@img/icons/about_me/mobile_dev.svg") no-repeat;
+    }
+  }
+  &_web3 {
+    &::before {
+      top: 16px;
+      left: 15px;
+      background: url("@img/icons/about_me/design.svg") no-repeat;
+    }
+  }
+}
+
+.about-me__impact-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.about-me__impact-descr {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}

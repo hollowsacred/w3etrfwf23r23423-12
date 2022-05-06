@@ -1,0 +1,41 @@
+
+//Base
+@import "./reset";
+@import "./variables";
+
+//Blocks
+@import "./hero";
+@import "./title";
+@import "./btn";
+@import "./sidepanel";
+@import "./about-me";
+@import "./menu";
+@import "./useful";
+@import "./skills";
+@import "./percent";
+@import "./portfolio";
+@import "./prices";
+@import "./contacts";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+//Global
+body {
+  font-family: 'Poppins',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+.container {
+  max-width: $containerWidth;
+  padding: 0 15px;
+  margin: 0 auto;
+  &_small {
+    max-width: calc($containerWidth - 100px);
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+}
